@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+</head>
+
+<body>
+    <header>
+        <h1>Docket</h1>
+    </header>
+    <form action="">
+        <input type="text" class="task-input">
+        <button class="task-button" type="submit">
+            <i class="fas fa-calendar-plus"></i>
+        </button>
+        <div class="select">
+            <select name="tasks" class="filter-task">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+             </select>
+        </div>
+        
+    </form>
+    <div class="task-container">
+        <ul class="task-list"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
